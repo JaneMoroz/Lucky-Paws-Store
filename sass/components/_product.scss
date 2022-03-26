@@ -1,0 +1,63 @@
+.product {
+  position: relative;
+  width: 30rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &__img-box {
+    position: relative;
+    height: 35rem;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 0.8rem 0.2rem 0.8rem;
+    background-color: $color-white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+    &--new {
+      color: $color-secondary;
+    }
+
+    &--hot {
+      color: $color-red;
+    }
+  }
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+    align-items: flex-end;
+  }
+  &__category-label {
+    background-color: $color-primary;
+    padding: 0.8rem;
+    color: $color-white;
+  }
+
+  &__prices {
+    font-size: 2.6rem;
+    font-weight: 300;
+    display: flex;
+    column-gap: 2.4rem;
+
+    &--prev {
+      text-decoration: line-through;
+      color: $color-grey-light-3;
+    }
+  }
+
+  &:hover {
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+  }
+}

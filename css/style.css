@@ -34,6 +34,10 @@ body {
   font-size: 1.6rem;
   text-transform: uppercase; }
 
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 500; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   border: none;
@@ -148,9 +152,57 @@ body {
   to {
     transform: rotate(0); } }
 
+.product {
+  position: relative;
+  width: 30rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s; }
+  .product__img-box {
+    position: relative;
+    height: 35rem;
+    width: 100%; }
+    .product__img-box img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .product__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 0.8rem 0.2rem 0.8rem;
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+    .product__label--new {
+      color: #117495; }
+    .product__label--hot {
+      color: #d72f2a; }
+  .product__text-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+    align-items: flex-end; }
+  .product__category-label {
+    background-color: #363636;
+    padding: 0.8rem;
+    color: #ffffff; }
+  .product__prices {
+    font-size: 2.6rem;
+    font-weight: 300;
+    display: flex;
+    column-gap: 2.4rem; }
+    .product__prices--prev {
+      text-decoration: line-through;
+      color: #878787; }
+  .product:hover {
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.05);
+    transform: scale(1.05); }
+
 .container {
   max-width: 140rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 .header {
   height: 65rem;
@@ -178,14 +230,16 @@ body {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #ffffff;
+    transform: translateY(-50%);
+    padding: 1.6rem;
+    color: rgba(255, 255, 255, 0.45);
     font-weight: bold;
-    font-size: 2.4rem;
+    font-size: 3.6rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none; }
+    .slideshow-container__prev:hover, .slideshow-container__next:hover {
+      color: rgba(255, 255, 255, 0.75); }
   .slideshow-container__next {
     right: 0;
     border-radius: 3px 0 0 3px; }
@@ -291,3 +345,18 @@ body {
   margin: 1.6rem auto;
   width: 80rem;
   justify-content: space-between; }
+
+.new-arrivals-section {
+  padding: 3.6rem; }
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 40rem;
+  margin-bottom: 2.4rem; }
+  .section-heading__btns {
+    display: flex; }
+
+.products-display {
+  display: flex; }
