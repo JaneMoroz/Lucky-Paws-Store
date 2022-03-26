@@ -1,9 +1,6 @@
-.hero {
-  &__img {
-  }
-  &__text-box {
-  }
-}
-
-.pagination {
+.stories-section {
+  display: flex;
+  margin: 1.6rem auto;
+  width: 80rem;
+  justify-content: space-between;
 }

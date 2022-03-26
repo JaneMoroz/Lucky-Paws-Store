@@ -1,0 +1,55 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+
+  &__img-box {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      background-image: linear-gradient(white, white),
+        radial-gradient(circle at top left, $color-white, $color-secondary);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      z-index: -1;
+    }
+
+    &:hover::after {
+      animation-name: rotation;
+      animation-duration: 3s;
+      animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+/* Rotating animation */
+@keyframes rotation {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
