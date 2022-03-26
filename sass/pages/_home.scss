@@ -5,19 +5,35 @@
   justify-content: space-between;
 }
 
-.new-arrivals-section {
+.products-section {
+  padding: 3.6rem;
+}
+
+.articles-section {
+  display: flex;
+  justify-content: space-between;
   padding: 3.6rem;
 }
 
 .section-heading {
   display: flex;
   align-items: center;
-  justify-content: end;
-  column-gap: 40rem;
-  margin-bottom: 2.4rem;
+
+  &--top {
+    justify-content: end;
+    margin-bottom: 2.4rem;
+    column-gap: 40rem;
+  }
+
+  &--side {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+  }
 
   &__btns {
     display: flex;
+    margin-left: 7rem;
   }
 }
 

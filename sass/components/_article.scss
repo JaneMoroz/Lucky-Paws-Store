@@ -1,0 +1,28 @@
+.article {
+  height: 70rem;
+  &__img-box {
+    position: relative;
+    height: 60rem;
+    width: 80rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-10%);
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    align-items: flex-start;
+  }
+  &__paragraph {
+    line-height: 1.7;
+  }
+}
