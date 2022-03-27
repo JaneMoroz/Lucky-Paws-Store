@@ -87,14 +87,11 @@ body {
     font-size: 1.4rem;
     font-weight: 500; }
 
-.btn--color {
+.btn-color {
   font-size: 1.4rem;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
-  background: linear-gradient(to right, #ffffff 50%, #117495 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -102,12 +99,20 @@ body {
   justify-content: space-between;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.125);
   transition: all 0.3s; }
-  .btn--color svg {
+  .btn-color svg {
     height: 2rem;
     width: 2rem; }
-  .btn--color:hover {
+  .btn-color:hover {
     background-position: left bottom;
     color: #117495; }
+  .btn-color--primary {
+    background: linear-gradient(to right, #ffffff 50%, #363636 50%);
+    background-size: 200% 100%;
+    background-position: right bottom; }
+  .btn-color--secondary {
+    background: linear-gradient(to right, #ffffff 50%, #117495 50%);
+    background-size: 200% 100%;
+    background-position: right bottom; }
 
 .story {
   display: flex;
@@ -153,15 +158,43 @@ body {
     transform: rotate(0); } }
 
 .product {
+  display: flex;
   position: relative;
-  width: 30rem;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.3s; }
+  .product--normal {
+    width: 30rem; }
+    .product--normal .product__img-box {
+      height: 35rem;
+      width: 100%; }
+    .product--normal .product__text-box {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.6rem;
+      align-items: flex-end; }
+    .product--normal .product__name {
+      text-align: end; }
+  .product--small {
+    width: 100%;
+    height: 20rem; }
+    .product--small .product__img-box {
+      flex-shrink: 0;
+      height: 100%;
+      width: 16.8rem; }
+    .product--small .product__text-box {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.6rem;
+      align-items: flex-start; }
+    .product--small .product__name {
+      text-align: start; }
+  .product--vertical {
+    flex-direction: column; }
+  .product--horizontal {
+    column-gap: 2.4rem; }
   .product__img-box {
-    position: relative;
-    height: 35rem;
-    width: 100%; }
+    position: relative; }
     .product__img-box img {
       height: 100%;
       width: 100%;
@@ -180,11 +213,6 @@ body {
       color: #d72f2a; }
     .product__label--sale {
       color: #92dd78; }
-  .product__text-box {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.6rem;
-    align-items: flex-end; }
   .product__category-label {
     background-color: #363636;
     padding: 0.8rem;
@@ -206,7 +234,7 @@ body {
   .article__img-box {
     position: relative;
     height: 60rem;
-    width: 80rem; }
+    width: 100%; }
     .article__img-box img {
       height: 100%;
       width: 100%;
@@ -216,13 +244,14 @@ body {
     top: 100%;
     left: 0;
     transform: translateY(-10%);
-    width: 60rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 0.8rem;
     align-items: flex-start; }
   .article__paragraph {
-    line-height: 1.7; }
+    line-height: 1.7;
+    text-align: start; }
 
 .container {
   max-width: 140rem;
@@ -396,3 +425,36 @@ body {
 
 .products-display {
   display: flex; }
+  .products-display--vertical {
+    flex-direction: column;
+    justify-content: space-between; }
+
+.promo-section {
+  padding: 3.6rem;
+  display: flex;
+  column-gap: 2.4rem; }
+  .promo-section--right .promo-section__brand-box {
+    order: 2; }
+  .promo-section--right .products-display {
+    order: 1; }
+  .promo-section--right .product--small {
+    justify-content: space-between; }
+  .promo-section--right .product__img-box {
+    order: 2; }
+  .promo-section--right .product__text-box {
+    order: 1; }
+  .promo-section__brand-box {
+    position: relative;
+    flex: 0 0 65%; }
+    .promo-section__brand-box img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .promo-section__text {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    transform: translateY(-25%); }
+    .promo-section__text span {
+      font-size: 4.8rem;
+      text-transform: uppercase; }
