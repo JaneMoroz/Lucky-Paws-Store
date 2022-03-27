@@ -55,6 +55,10 @@
   column-gap: 2.4rem;
 
   &--left {
+    .promo-section__text {
+      align-items: flex-end;
+      right: 3%;
+    }
   }
 
   &--right {
@@ -77,6 +81,11 @@
     .product__text-box {
       order: 1;
     }
+
+    .promo-section__text {
+      align-items: flex-start;
+      left: 3%;
+    }
   }
 
   &__brand-box {
@@ -89,11 +98,14 @@
       object-fit: cover;
     }
   }
+
   &__text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
-    right: 3%;
     transform: translateY(-25%);
+
     span {
       font-size: 4.8rem;
       text-transform: uppercase;

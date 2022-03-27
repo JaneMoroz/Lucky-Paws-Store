@@ -1,0 +1,82 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3.6rem;
+  border-top: 1px solid $color-grey-dark;
+
+  &__list {
+    list-style: none;
+    text-align: start;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__map {
+    flex: 0 0 30%;
+  }
+
+  &__connect {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3.6rem;
+    p {
+      text-align: start;
+      line-height: 1.6;
+      margin-bottom: 1.6rem;
+      padding: 0 1.4rem;
+    }
+  }
+
+  &__payments {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 5rem;
+      height: 3rem;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  &__group {
+  }
+  &__input {
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 2px;
+    background-color: rgba($color-grey-light-1, 0.45);
+    border: none;
+    border-bottom: 3px solid transparent;
+    display: block;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+      border-bottom: 3px solid $color-green;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-red;
+    }
+  }
+}

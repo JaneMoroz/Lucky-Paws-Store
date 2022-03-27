@@ -83,21 +83,26 @@
       width: 2rem;
     }
 
-    &:hover {
-      background-position: left bottom;
-      color: $color-secondary;
-    }
-
     &--primary {
       background: linear-gradient(to right, #ffffff 50%, $color-primary 50%);
       background-size: 200% 100%;
       background-position: right bottom;
+
+      &:hover {
+        background-position: left bottom;
+        color: $color-primary;
+      }
     }
 
     &--secondary {
       background: linear-gradient(to right, #ffffff 50%, $color-secondary 50%);
       background-size: 200% 100%;
       background-position: right bottom;
+
+      &:hover {
+        background-position: left bottom;
+        color: $color-secondary;
+      }
     }
   }
 }
