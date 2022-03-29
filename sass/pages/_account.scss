@@ -1,0 +1,58 @@
+.account {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.6rem 0;
+  width: 80rem;
+  margin: 0 auto;
+
+  &__nav {
+    &-user {
+      border-bottom: 1px solid $color-grey-dark;
+    }
+
+    &-admin {
+      margin: 3.2rem 0;
+
+      &-badge {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 1.2rem;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        color: $color-white;
+        text-transform: uppercase;
+        background-color: $color-primary;
+        margin-bottom: 1.6rem;
+
+        svg {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
+
+    &-list {
+    }
+
+    &-el {
+      display: flex;
+      align-items: center;
+      svg {
+        height: 2.8rem;
+        width: 2.8rem;
+        stroke-width: 1.5px;
+      }
+    }
+  }
+
+  &__orders {
+    &-title {
+      margin-bottom: 1.6rem;
+    }
+
+    &-list {
+      list-style: none;
+    }
+  }
+}

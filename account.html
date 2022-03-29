@@ -112,11 +112,11 @@
         <!--Navigation-->
         <nav class="nav">
           <div class="nav__main container">
-            <a href="#" class="btn btn--text btn--text-main">New arrival</a>
-            <a href="#" class="btn btn--text btn--text-main">Cat</a>
-            <a href="#" class="btn btn--text btn--text-main">Dog</a>
-            <a href="#" class="btn btn--text btn--text-main">Gift cards</a>
-            <a href="#" class="btn btn--text btn--text-main">About us</a>
+            <a href="#" class="btn btn--text btn--text-big">New arrival</a>
+            <a href="#" class="btn btn--text btn--text-big">Cat</a>
+            <a href="#" class="btn btn--text btn--text-big">Dog</a>
+            <a href="#" class="btn btn--text btn--text-big">Gift cards</a>
+            <a href="#" class="btn btn--text btn--text-big">About us</a>
           </div>
           <div class="nav__sub">
             <div class="nav__sub-inner container">
@@ -151,9 +151,12 @@
     </header>
     <main class="container">
       <div class="account">
+        <!--Navigation-->
         <nav class="account__nav">
+          <!--Main Navigation-->
           <div class="account__nav-user">
             <ul class="account__nav-list">
+              <!--Settings-->
               <li class="account__nav-el">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -172,41 +175,365 @@
                     d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <a href="#" class="btn btn--text btn--text-main">Settings</a>
+                <a href="#" class="btn btn--text btn--text-normal">Settings</a>
+              </li>
+              <!--My Orders-->
+              <li class="account__nav-el">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                  />
+                </svg>
+                <a href="#" class="btn btn--text btn--text-normal">My Orders</a>
+              </li>
+              <!--My reviews-->
+              <li class="account__nav-el">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  />
+                </svg>
+                <a href="#" class="btn btn--text btn--text-normal"
+                  >My reviews</a
+                >
+              </li>
+              <!--Billing-->
+              <li class="account__nav-el">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                  />
+                </svg>
+                <a href="#" class="btn btn--text btn--text-normal">Billing</a>
               </li>
             </ul>
           </div>
-          <div class="account__nav-admin"></div>
+          <!--Admin Navigation-->
+          <div class="account__nav-admin">
+            <span class="account__nav-admin-badge">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+                />
+              </svg>
+              Admin
+            </span>
+            <ul class="account__nav-list">
+              <!--Manage Products-->
+              <li class="account__nav-el">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                  />
+                </svg>
+                <a href="#" class="btn btn--text btn--text-normal"
+                  >Manage Products</a
+                >
+              </li>
+              <!--Manage Users-->
+              <li class="account__nav-el">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <a href="#" class="btn btn--text btn--text-normal"
+                  >Manage Users</a
+                >
+              </li>
+              <!--My reviews-->
+              <li class="account__nav-el">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  />
+                </svg>
+                <a href="#" class="btn btn--text btn--text-normal"
+                  >My reviews</a
+                >
+              </li>
+              <!--Manage Orders-->
+              <li class="account__nav-el">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <a href="#" class="btn btn--text btn--text-normal"
+                  >Manage Orders</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
+        <div class="account__container">
+          <!--Account Details-->
+          <!-- <div class="account__details">
+            <form action="submit" class="form form--big">
+              <h1 class="form__title heading-primary--main">
+                Your account settings
+              </h1>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="password"
+                  class="form__input"
+                  placeholder="Current Password"
+                  id="currentPassword"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="password"
+                  class="form__input"
+                  placeholder="Password"
+                  id="password"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="password"
+                  class="form__input"
+                  placeholder="Confirm Password"
+                  id="confirmPassword"
+                  required
+                />
+              </div>
+              <div class="form__group form__photo-upload">
+                <img
+                  src="/img/users/user-1.jpg"
+                  alt="Anna Lurdes"
+                  class="form__user-photo"
+                />
+                <a href="#" class="btn btn--text">Choose new photo</a>
+              </div>
+              <div class="form__group">
+                <a class="btn btn-color btn-color--primary"> Save Settings </a>
+              </div>
+            </form>
+          </div> -->
+          <!--Orders-->
+          <!-- <div class="account__orders account__orders--user">
+            <h1 class="account__orders-title heading-primary--main">
+              Your orders
+            </h1>
+            <ul class="account__orders-list">
+              <li class="order">
+                <h2 class="order__data heading-tertiary">23 July 2021</h2>
+                <ul class="order__products-list">
+                  <li class="order__product">Backpack “Apollo”</li>
+                  <li class="order__product">Costume “Firefly” ”</li>
+                </ul>
+                <div class="order__status"><span>&nbsp;</span>Delivered</div>
+                <div class="order__details">
+                  <span class="order__quantity">2pc</span>
+                  <span class="order__total-price">$150</span>
+                </div>
+                <div class="order__customer">
+                  <span class="order__customer-name">Anna Frances</span>
+                  <span class="order__customer-address"
+                    >Big Valley Avenue 37-989</span
+                  >
+                </div>
+              </li>
+              <li class="order">
+                <h2 class="order__data heading-tertiary">20 July 2021</h2>
+                <ul class="order__products-list">
+                  <li class="order__product">Butcher’s “Duck”</li>
+                  <li class="order__product">Butcher’s Chicken</li>
+                </ul>
+                <div class="order__status"><span>&nbsp;</span>Delivered</div>
+                <div class="order__details">
+                  <span class="order__quantity">5pc</span>
+                  <span class="order__total-price">$45</span>
+                </div>
+                <div class="order__customer">
+                  <span class="order__customer-name">Curt Stevens</span>
+                  <span class="order__customer-address">Babel St. 87-19A</span>
+                </div>
+              </li>
+              <li class="order">
+                <h2 class="order__data heading-tertiary">1 May 2021</h2>
+                <ul class="order__products-list">
+                  <li class="order__product">Bed "Sweet Dreams"</li>
+                  <li class="order__product">Backpack “Apollo”</li>
+                </ul>
+                <div class="order__status"><span>&nbsp;</span>Delivered</div>
+                <div class="order__final">
+                  <span class="order__quantity">3pc</span>
+                  <span class="order__total-price">$128</span>
+                </div>
+                <div class="order__customer">
+                  <span class="order__customer-name">Jacklin Monroe</span>
+                  <span class="order__customer-address"
+                    >Whitechapel St. 87-19A</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div> -->
+          <!--Order Details-->
+          <div class="order">
+            <h2 class="order__data heading-tertiary">23 July 2021</h2>
+            <ul class="order__products-list">
+              <li class="order__product">
+                <span class="order__product-details">
+                  <img
+                    src="/img/products/product-1.jpg"
+                    alt="Product 1"
+                    class="order__product-img"
+                  />
+                  Awersome Bed
+                </span>
+                <span class="order__product-price">$70</span>
+              </li>
+              <li class="order__product">
+                <span class="order__product-details">
+                  <img
+                    src="/img/products/product-8.jpg"
+                    alt="Product 3"
+                    class="order__product-img"
+                  />
+                  "Little Star" Costume
+                </span>
+                <span class="order__product-price">$39.99</span>
+              </li>
+            </ul>
+            <div class="order__price">
+              <span class="order__price-name">Subtotal:</span>
+              <span>$109.99</span>
+              <span class="order__price-name">Taxes:</span>
+              <span>$10</span>
+              <span class="order__price-name">Shipping Price:</span>
+              <span>$20</span>
+              <span class="order__price-name order__price-total">Total:</span>
+              <span>$139.99</span>
+            </div>
+            <div class="order__details">
+              <div class="order__customer">
+                <span class="order__customer-name">Jacklin Monroe</span>
+                <span class="order__customer-address"
+                  >Whitechapel St. 87-19A</span
+                >
+              </div>
+              <div class="order__statuses">
+                <div class="order__status"><input type="checkbox" /> Paid</div>
+                <div class="order__status">
+                  <input type="checkbox" /> Delivered
+                </div>
+                <!-- <div class="order__status"><span>&nbsp;</span>Paid</div>
+                <div class="order__status"><span>&nbsp;</span>Delivered</div> -->
+              </div>
+            </div>
+            <a class="order__btn btn btn-color btn-color--primary">Save</a>
+          </div>
+        </div>
       </div>
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">CONTACT US</a>
+            <a href="#" class="btn btn--text btn--text-big">CONTACT US</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">REWARDS</a>
+            <a href="#" class="btn btn--text btn--text-big">REWARDS</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">REFERRALS</a>
+            <a href="#" class="btn btn--text btn--text-big">REFERRALS</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">FAQS</a>
+            <a href="#" class="btn btn--text btn--text-big">FAQS</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">PAYMENTS</a>
+            <a href="#" class="btn btn--text btn--text-big">PAYMENTS</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">TRACK MY ORDER</a>
+            <a href="#" class="btn btn--text btn--text-big">TRACK MY ORDER</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">PRIVACY POLICY</a>
+            <a href="#" class="btn btn--text btn--text-big">PRIVACY POLICY</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">SHIPPING POLICY</a>
+            <a href="#" class="btn btn--text btn--text-big">SHIPPING POLICY</a>
           </li>
           <li class="footer__el">
-            <a href="#" class="btn btn--text btn--text-main">RETURN & REFUND</a>
+            <a href="#" class="btn btn--text btn--text-big">RETURN & REFUND</a>
           </li>
         </ul>
         <div class="footer__box">
@@ -296,7 +623,7 @@
               Join to get special offers, free giveaways, and
               once-in-a-lifetime.
             </p>
-            <form class="form" action="submit">
+            <form class="form form--small" action="submit">
               <div class="form__group">
                 <input
                   type="text"
@@ -308,7 +635,20 @@
               </div>
               <div class="form__group">
                 <button class="btn btn-color btn-color--primary">
-                  Next step &rarr;
+                  Join
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
                 </button>
               </div>
             </form>

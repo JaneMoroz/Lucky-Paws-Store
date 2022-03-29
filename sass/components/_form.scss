@@ -1,11 +1,15 @@
 .form {
   display: flex;
 
+  &__outer {
+    margin: 6.4rem 0;
+  }
+
   &--small {
+    align-items: center;
   }
 
   &--big {
-    margin: 6.4rem;
     flex-direction: column;
     align-items: center;
     row-gap: 1.4rem;
@@ -26,7 +30,7 @@
     color: inherit;
     width: 35rem;
     font-size: 1.5rem;
-    padding: 1.1rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 2px;
     background-color: rgba($color-grey-light-1, 0.45);
     border: none;
@@ -43,5 +47,18 @@
     &:focus:invalid {
       border-bottom: 1px solid $color-red;
     }
+  }
+
+  &__photo-upload {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem 0;
+  }
+
+  &__user-photo {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
   }
 }
