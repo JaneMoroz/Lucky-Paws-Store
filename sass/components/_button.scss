@@ -17,6 +17,10 @@
     margin: 0 1rem;
     transition: all 0.3s;
 
+    svg {
+      stroke-width: 1.5px;
+    }
+
     &:hover,
     &:active {
       transform: translateY(-2px);

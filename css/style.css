@@ -51,6 +51,8 @@ body {
   width: 2.8rem;
   margin: 0 1rem;
   transition: all 0.3s; }
+  .btn--icon svg {
+    stroke-width: 1.5px; }
   .btn--icon:hover, .btn--icon:active {
     transform: translateY(-2px); }
 
@@ -116,6 +118,36 @@ body {
     .btn-color--secondary:hover {
       background-position: left bottom;
       color: #117495; }
+
+.form {
+  display: flex; }
+  .form--big {
+    margin: 6.4rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.4rem; }
+    .form--big .form__group:last-of-type {
+      margin-top: 1.2rem; }
+  .form__title {
+    margin-bottom: 1.6rem; }
+  .form__input {
+    font-family: inherit;
+    color: inherit;
+    width: 35rem;
+    font-size: 1.5rem;
+    padding: 1.1rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(196, 196, 196, 0.45);
+    border: none;
+    border-bottom: 1px solid transparent;
+    display: block;
+    transition: all 0.3s; }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid #92dd78; }
+    .form__input:focus:invalid {
+      border-bottom: 1px solid #d72f2a; }
 
 .story {
   display: flex;
@@ -262,8 +294,9 @@ body {
   margin: 0 auto; }
 
 .header {
-  height: 65rem;
   position: relative; }
+  .header--index-page {
+    height: 65rem; }
   .header__inner {
     position: relative;
     display: flex;
@@ -434,26 +467,6 @@ body {
     .footer__payments img {
       width: 5rem;
       height: 3rem; }
-
-.form {
-  display: flex; }
-  .form__input {
-    font-family: inherit;
-    color: inherit;
-    font-size: 1.5rem;
-    padding: 0.8rem 2rem;
-    border-radius: 2px;
-    background-color: rgba(196, 196, 196, 0.45);
-    border: none;
-    border-bottom: 3px solid transparent;
-    display: block;
-    transition: all 0.3s; }
-    .form__input:focus {
-      outline: none;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-      border-bottom: 3px solid #92dd78; }
-    .form__input:focus:invalid {
-      border-bottom: 3px solid #d72f2a; }
 
 .stories-section {
   display: flex;

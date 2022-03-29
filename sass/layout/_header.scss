@@ -1,6 +1,9 @@
 .header {
-  height: 65rem;
   position: relative;
+
+  &--index-page {
+    height: 65rem;
+  }
 
   &__inner {
     position: relative;

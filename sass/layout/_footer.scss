@@ -52,31 +52,3 @@
     }
   }
 }
-
-.form {
-  display: flex;
-  &__group {
-  }
-  &__input {
-    font-family: inherit;
-    color: inherit;
-    font-size: 1.5rem;
-    padding: 0.8rem 2rem;
-    border-radius: 2px;
-    background-color: rgba($color-grey-light-1, 0.45);
-    border: none;
-    border-bottom: 3px solid transparent;
-    display: block;
-    transition: all 0.3s;
-
-    &:focus {
-      outline: none;
-      box-shadow: 0 1rem 2rem rgba(#000, 0.1);
-      border-bottom: 3px solid $color-green;
-    }
-
-    &:focus:invalid {
-      border-bottom: 3px solid $color-red;
-    }
-  }
-}
