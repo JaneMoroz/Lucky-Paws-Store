@@ -1,3 +1,6 @@
+///////////////////////////////////////////////////////
+// Header
+
 .header {
   position: relative;
 
@@ -17,6 +20,8 @@
     transition: all 0.3s;
   }
 }
+
+// Slideshow Carousel
 
 .slideshow-container {
   position: absolute;
@@ -76,6 +81,8 @@
   }
 }
 
+// Hamburger, Logo, Search, User, Favorites and Cart
+
 .header-tabs {
   display: flex;
   justify-content: space-between;
@@ -93,6 +100,8 @@
   }
 }
 
+// Navigation
+
 .nav {
   position: relative;
   display: flex;
@@ -100,7 +109,6 @@
   width: 100%;
   &__main {
     width: 50rem;
-    // flex: 0 1 60%;
     display: flex;
     justify-content: space-between;
   }
@@ -137,7 +145,7 @@
 }
 
 ///////////////////////////////////////////////////////
-// Dots
+// Carousel addons
 
 .dots {
   position: absolute;
@@ -161,23 +169,4 @@
 .active,
 .dot:hover {
   background-color: $color-grey-transparent-2;
-}
-
-///////////////////////////////////////////////////////
-// Animation
-
-/* Appearing animation */
-.sliding {
-  animation-name: sliding;
-  animation-duration: 1.5s;
-  animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
-}
-
-@keyframes sliding {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
 }

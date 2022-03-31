@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////
+// Animation
+
+// Slideshow
+/* Appearing animation */
+.sliding {
+  animation-name: sliding;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+@keyframes sliding {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

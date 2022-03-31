@@ -33,6 +33,7 @@
     }
 
     &-list {
+      list-style: none;
     }
 
     &-el {
@@ -46,6 +47,16 @@
     }
   }
 
+  &__side-panel {
+    &-title {
+      margin-bottom: 1.6rem;
+    }
+
+    &-list {
+      list-style: none;
+    }
+  }
+
   &__orders {
     &-title {
       margin-bottom: 1.6rem;
@@ -53,6 +64,37 @@
 
     &-list {
       list-style: none;
+    }
+  }
+}
+
+.user {
+  display: flex;
+  width: 100%;
+  min-width: 40rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid $color-grey-dark;
+
+  &__details-box {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+    img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__details-btns {
+    display: flex;
+    align-self: center;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
     }
   }
 }

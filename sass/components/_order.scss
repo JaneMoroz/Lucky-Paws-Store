@@ -6,10 +6,10 @@
   min-width: 40rem;
   margin-bottom: 1.4rem;
   padding: 1.2rem 0;
-  cursor: pointer;
 
   &__data {
     align-self: start;
+    padding: 0;
   }
 
   &__products-list {
@@ -32,6 +32,10 @@
         width: 7rem;
         object-fit: cover;
         margin-right: 1.2rem;
+      }
+
+      a {
+        padding: 0;
       }
     }
   }

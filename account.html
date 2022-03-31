@@ -391,12 +391,14 @@
           </div> -->
           <!--Orders-->
           <!-- <div class="account__orders account__orders--user">
-            <h1 class="account__orders-title heading-primary--main">
+            <h1 class="account__side-panel-title heading-primary--main">
               Your orders
             </h1>
-            <ul class="account__orders-list">
+            <ul class="account__side-panel-list">
               <li class="order">
-                <h2 class="order__data heading-tertiary">23 July 2021</h2>
+                <a class="btn btn--text btn--text-normal order__data"
+                  >23 July 2021</a
+                >
                 <ul class="order__products-list">
                   <li class="order__product">Backpack “Apollo”</li>
                   <li class="order__product">Costume “Firefly” ”</li>
@@ -414,7 +416,9 @@
                 </div>
               </li>
               <li class="order">
-                <h2 class="order__data heading-tertiary">20 July 2021</h2>
+                <a class="btn btn--text btn--text-normal order__data"
+                  >20 July 2021</a
+                >
                 <ul class="order__products-list">
                   <li class="order__product">Butcher’s “Duck”</li>
                   <li class="order__product">Butcher’s Chicken</li>
@@ -430,7 +434,9 @@
                 </div>
               </li>
               <li class="order">
-                <h2 class="order__data heading-tertiary">1 May 2021</h2>
+                <a class="btn btn--text btn--text-normal order__data"
+                  >1 May 2021</a
+                >
                 <ul class="order__products-list">
                   <li class="order__product">Bed "Sweet Dreams"</li>
                   <li class="order__product">Backpack “Apollo”</li>
@@ -450,7 +456,7 @@
             </ul>
           </div> -->
           <!--Order Details-->
-          <div class="order">
+          <!-- <div class="order">
             <h2 class="order__data heading-tertiary">23 July 2021</h2>
             <ul class="order__products-list">
               <li class="order__product">
@@ -460,7 +466,7 @@
                     alt="Product 1"
                     class="order__product-img"
                   />
-                  Awersome Bed
+                  <a href="#" class="btn btn--text-sub">Awersome Bed</a>
                 </span>
                 <span class="order__product-price">$70</span>
               </li>
@@ -471,7 +477,9 @@
                     alt="Product 3"
                     class="order__product-img"
                   />
-                  "Little Star" Costume
+                  <a href="#" class="btn btn--text-sub"
+                    >"Little Star" Costume</a
+                  >
                 </span>
                 <span class="order__product-price">$39.99</span>
               </li>
@@ -497,12 +505,216 @@
                 <div class="order__status"><input type="checkbox" /> Paid</div>
                 <div class="order__status">
                   <input type="checkbox" /> Delivered
-                </div>
-                <!-- <div class="order__status"><span>&nbsp;</span>Paid</div>
+                </div> -->
+          <!-- <div class="order__status"><span>&nbsp;</span>Paid</div>
                 <div class="order__status"><span>&nbsp;</span>Delivered</div> -->
-              </div>
+          <!-- </div>
             </div>
             <a class="order__btn btn btn-color btn-color--primary">Save</a>
+          </div> -->
+          <!--List of Users-->
+          <!-- <h1 class="account__side-panel-title heading-primary--main">
+            List of Users
+          </h1>
+          <ul class="account__side-panel-list">
+            <li class="user">
+              <div class="user__details-box">
+                <img src="/img/users/user-1.jpg" alt="User 1" />
+                <span>Anna Lucia</span>
+              </div>
+              <div class="user__details-btns">
+                <a href="#" class="btn btn--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="btn btn--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="btn btn--icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul> -->
+          <!--Add New Product-->
+          <div class="account__details">
+            <form action="submit" class="form form--big">
+              <h1 class="form__title heading-primary--main">Add New Product</h1>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Product Name"
+                  id="productName"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Type"
+                  id="type"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Animal"
+                  id="animal"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="number"
+                  class="form__input"
+                  placeholder="Price"
+                  id="price"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="number"
+                  class="form__input"
+                  placeholder="Count in Stock"
+                  id="countInStock"
+                  required
+                />
+              </div>
+              <span>Write colors, styles separated by coma:</span>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Colors"
+                  id="colors"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Styles"
+                  id="styles"
+                  required
+                />
+              </div>
+              <span>Features:</span>
+              <div class="form__group">
+                <textarea
+                  rows="2"
+                  class="form__input"
+                  placeholder="Feature 1"
+                  id="feature1"
+                  required
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <textarea
+                  rows="2"
+                  class="form__input"
+                  placeholder="Feature 2"
+                  id="feature2"
+                  required
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <textarea
+                  rows="2"
+                  class="form__input"
+                  placeholder="Feature 3"
+                  id="feature3"
+                  required
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <textarea
+                  rows="2"
+                  class="form__input"
+                  placeholder="Feature 4"
+                  id="feature4"
+                  required
+                ></textarea>
+              </div>
+              <span>Pictures:</span>
+              <div class="form__group form__photo-upload">
+                <img
+                  src="/img/products/product-6.jpg"
+                  alt="Anna Lurdes"
+                  class="form__product-photo"
+                />
+                <a href="#" class="btn btn--text">Choose primary picture</a>
+              </div>
+              <div class="form__group form__photo-upload">
+                <img
+                  src="/img/products/product-6.jpg"
+                  alt="Anna Lurdes"
+                  class="form__product-photo"
+                />
+                <a href="#" class="btn btn--text">Choose picture 1</a>
+              </div>
+              <div class="form__group form__photo-upload">
+                <img
+                  src="/img/products/product-6.jpg"
+                  alt="Anna Lurdes"
+                  class="form__product-photo"
+                />
+                <a href="#" class="btn btn--text">Choose picture 2</a>
+              </div>
+              <div class="form__group form__photo-upload">
+                <img
+                  src="/img/products/product-6.jpg"
+                  alt="Anna Lurdes"
+                  class="form__product-photo"
+                />
+                <a href="#" class="btn btn--text">Choose picture 3</a>
+              </div>
+              <div class="form__group">
+                <a class="btn btn-color btn-color--primary"> Save Settings </a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
