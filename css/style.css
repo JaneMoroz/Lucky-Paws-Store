@@ -746,26 +746,26 @@ body {
   .account__orders-list {
     list-style: none; }
 
-.user {
+.list-el {
   display: flex;
   width: 100%;
   min-width: 40rem;
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid rgba(113, 113, 113, 0.75); }
-  .user__details-box {
+  .list-el__details-box {
     display: flex;
     align-items: center;
     column-gap: 1.6rem; }
-    .user__details-box img {
+    .list-el__details-box img {
       height: 5rem;
       width: 5rem;
       border-radius: 50%;
       object-fit: cover; }
-  .user__details-btns {
+  .list-el__details-btns {
     display: flex;
     align-self: center; }
-    .user__details-btns svg {
+    .list-el__details-btns svg {
       height: 2rem;
       width: 2rem; }
 
