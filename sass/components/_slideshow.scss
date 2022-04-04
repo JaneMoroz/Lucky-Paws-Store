@@ -1,0 +1,78 @@
+.slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    color: $color-grey-transparent-1;
+    transition: 0.6s ease;
+
+    &:hover {
+      color: $color-grey-transparent-3;
+    }
+  }
+
+  &__next {
+    right: 0;
+  }
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  &__img-box {
+    height: 65rem;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 3%;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 35rem;
+    padding: 1.2rem;
+  }
+}
+
+///////////////////////////////////////////////////////
+// Carousel addons
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 1rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $color-grey-transparent-1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: $color-grey-transparent-2;
+}

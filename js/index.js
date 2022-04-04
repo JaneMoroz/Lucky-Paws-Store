@@ -1,3 +1,7 @@
+/////////////////////////////////////////////////////////////////////
+// Slide show
+// TODO: Finish slideshow
+
 let slideIndex = 1;
 // let previousIndex;
 // let nextIndex;
@@ -42,4 +46,20 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = 'inline-block';
   slides[slideIndex - 1].style.zIndex = '0';
   dots[slideIndex - 1].className += ' active';
+}
+
+/////////////////////////////////////////////////////////////////////
+// Dropdown menu
+let dropdownParents = document.getElementsByClassName('parent');
+for (let i = 0; i < dropdownParents.length; i++) {
+  console.log(dropdownParents[i]);
+  const parent = dropdownParents[i];
+  parent.addEventListener('mouseenter', function (event) {
+    let dropdownChild = parent.getElementsByClassName('nav__sub')[0];
+    dropdownChild.classList.add('dropdown__is-visible');
+  });
+  parent.addEventListener('mouseleave', function (event) {
+    let dropdownChild = parent.getElementsByClassName('nav__sub')[0];
+    dropdownChild.classList.remove('dropdown__is-visible');
+  });
 }
