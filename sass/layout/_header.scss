@@ -35,6 +35,10 @@
   padding: 1.6rem 1.6rem 0 1.6rem;
 
   &__el {
+    &--hamburger {
+      visibility: collapse;
+    }
+
     &--logo {
       flex: 0 1 75%;
       padding-left: 15rem;
@@ -93,4 +97,54 @@
 
 .dropdown__is-visible {
   display: flex;
+}
+
+.hamburger-is-visible {
+  .header-tabs__el--hamburger {
+    visibility: visible;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+
+    &:hover {
+      background-color: $color-grey-transparent-3;
+    }
+
+    &__main {
+      flex-direction: column;
+      background-color: $color-grey-transparent-2;
+      width: 30rem;
+
+      @include respond(phone) {
+        width: 20rem;
+      }
+    }
+
+    &__sub {
+      justify-content: flex-start;
+      width: fit-content;
+      top: 0;
+      left: 99%;
+      width: 40rem;
+      background-color: $color-grey-transparent-2;
+
+      @include respond(phone) {
+        width: 40rem;
+      }
+
+      &:hover {
+        background-color: $color-grey-transparent-3;
+      }
+
+      &-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 }

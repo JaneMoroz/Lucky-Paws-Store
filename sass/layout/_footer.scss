@@ -4,15 +4,33 @@
   padding: 3.6rem;
   border-top: 1px solid $color-grey-dark;
 
+  @include respond(tab-port) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
   &__list {
     list-style: none;
     text-align: start;
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 
   &__box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include respond(phone) {
+      row-gap: 2rem;
+      grid-row: 1;
+    }
   }
 
   &__map {
@@ -35,6 +53,11 @@
     flex-direction: column;
     align-items: center;
     padding: 0 3.6rem;
+
+    @include respond(tab-port) {
+      padding: 0;
+    }
+
     p {
       text-align: start;
       line-height: 1.6;

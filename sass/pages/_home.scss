@@ -3,16 +3,44 @@
   margin: 1.6rem auto;
   width: 80rem;
   justify-content: space-between;
+
+  @include respond(tab-port) {
+    width: auto;
+    column-gap: 1.2rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 0 1.2rem;
+  }
 }
 
 .products-section {
   padding: 3.6rem;
+
+  @include respond(tab-port) {
+    padding: 3.6rem 0;
+  }
 }
 
 .articles-section {
   display: flex;
   justify-content: space-between;
   padding: 3.6rem;
+
+  @include respond(tab-port) {
+    padding: 3.6rem 0;
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    column-gap: 3.2rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
 }
 
 .section-heading {
@@ -23,12 +51,30 @@
     justify-content: end;
     margin-bottom: 2.4rem;
     column-gap: 40rem;
+
+    @include respond(tab-port) {
+      column-gap: 20rem;
+    }
+
+    @include respond(phone) {
+      column-gap: 0;
+      justify-content: space-between;
+      padding: 0 1.6rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &--side {
-    display: flex;
     align-self: center;
     flex-direction: column;
+
+    @include respond(phone) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: stretch;
+      padding: 0 1.6rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__btns {
@@ -46,6 +92,8 @@
   }
 
   &--horizontal {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
   }
 }
 
@@ -53,6 +101,32 @@
   padding: 3.6rem;
   display: flex;
   column-gap: 2.4rem;
+
+  @include respond(tab-port) {
+    padding: 3.6rem 0;
+    flex-direction: column;
+    row-gap: 1.2rem;
+  }
+
+  .products-display--vertical {
+    @include respond(tab-port) {
+      flex-direction: row;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      padding: 1.6rem 0;
+    }
+  }
+
+  .product--horizontal {
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  .product--small {
+    @include respond(tab-port) {
+    }
+  }
 
   &--left {
     .promo-section__text {
@@ -64,6 +138,10 @@
   &--right {
     .promo-section__brand-box {
       order: 2;
+
+      @include respond(tab-port) {
+        order: 1;
+      }
     }
 
     .products-display {
@@ -76,6 +154,10 @@
 
     .product__img-box {
       order: 2;
+
+      @include respond(tab-port) {
+        order: 1;
+      }
     }
 
     .product__text-box {
@@ -90,12 +172,16 @@
 
   &__brand-box {
     position: relative;
-    flex: 0 0 65%;
+    // flex: 0 0 65%;
 
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+
+      @include respond(tab-port) {
+        height: 30rem;
+      }
     }
   }
 

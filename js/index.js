@@ -58,8 +58,43 @@ for (let i = 0; i < dropdownParents.length; i++) {
     let dropdownChild = parent.getElementsByClassName('nav__sub')[0];
     dropdownChild.classList.add('dropdown__is-visible');
   });
+
   parent.addEventListener('mouseleave', function (event) {
     let dropdownChild = parent.getElementsByClassName('nav__sub')[0];
     dropdownChild.classList.remove('dropdown__is-visible');
   });
 }
+
+/////////////////////////////////////////////////////////////////////
+// Hamburger Menu
+// Create a condition that targets viewports at least 900px wide
+const mediaQuery = window.matchMedia('(max-width: 900px)');
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    // Then log the following message to the console
+    console.log('Media Query Matched!');
+
+    let headerInner = document.getElementsByClassName('header__inner')[0];
+    headerInner.classList.toggle('hamburger-is-visible');
+
+    let nav = document.getElementsByClassName('nav')[0];
+    nav.addEventListener('mouseleave', function (event) {
+      nav.style.display = 'none';
+    });
+
+    let hamburgerBtn = document.getElementsByClassName(
+      'header-tabs__el--hamburger'
+    )[0];
+
+    hamburgerBtn.addEventListener('click', function (event) {
+      nav.style.display = 'flex';
+    });
+  }
+}
+
+// Register event listener
+mediaQuery.addListener(handleTabletChange);
+
+// Initial check
+handleTabletChange(mediaQuery);
