@@ -1,0 +1,28 @@
+.cart {
+  margin: 3.6rem auto;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__prices {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    padding: 1rem;
+    border-bottom: 1px solid $color-grey-dark;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--total {
+      font-weight: 500;
+    }
+  }
+
+  &__form {
+    margin-top: 1.6rem;
+  }
+}

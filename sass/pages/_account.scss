@@ -72,25 +72,45 @@
   display: flex;
   width: 100%;
   min-width: 40rem;
+  max-width: 50rem;
   justify-content: space-between;
+  column-gap: 1rem;
   padding: 1rem;
   border-bottom: 1px solid $color-grey-dark;
+
+  &__last-span {
+    margin-left: auto;
+  }
 
   &__details-box {
     display: flex;
     align-items: center;
     column-gap: 1.6rem;
+    width: 100%;
+
     img {
+      flex-shrink: 0;
       height: 5rem;
       width: 5rem;
       border-radius: 50%;
       object-fit: cover;
+    }
+
+    a {
+      text-align: start;
+      word-wrap: normal;
     }
   }
 
   &__details-btns {
     display: flex;
     align-self: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     svg {
       height: 2rem;
