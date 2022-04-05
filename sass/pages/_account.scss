@@ -5,6 +5,16 @@
   width: 80rem;
   margin: 0 auto;
 
+  @include respond(tab-port) {
+    padding: 1.6rem 0;
+    width: 70rem;
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    width: 40rem;
+  }
+
   &__nav {
     &-user {
       border-bottom: 1px solid $color-grey-dark;
@@ -77,6 +87,10 @@
   column-gap: 1rem;
   padding: 1rem;
   border-bottom: 1px solid $color-grey-dark;
+
+  @include respond(phone) {
+    margin: 0 auto;
+  }
 
   &__last-span {
     margin-left: auto;
