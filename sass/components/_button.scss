@@ -165,10 +165,10 @@
     }
 
     &--mixed {
-      background-color: $color-primary;
+      background-color: $color-primary !important;
 
       &:hover {
-        background-color: $color-secondary;
+        background-color: $color-secondary !important;
       }
     }
 
