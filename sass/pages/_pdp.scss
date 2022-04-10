@@ -148,10 +148,18 @@
 .stars {
   display: flex;
   column-gap: 1rem;
-  svg {
+  &__star {
     height: 2.4rem;
     width: 2.4rem;
-    stroke: $color-secondary;
-    fill: $color-secondary;
+
+    &--active {
+      stroke: $color-secondary;
+      fill: $color-secondary;
+    }
+
+    &--inactive {
+      stroke: $color-secondary;
+      fill: $color-white;
+    }
   }
 }
